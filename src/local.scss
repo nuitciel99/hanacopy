@@ -1,0 +1,218 @@
+@import 'style.scss';
+
+.swiper {
+    width: 100%;
+    height: 570px;
+  }
+  
+.swiper iframe{
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+
+/* Center slide text vertically */
+display: flex !important;
+justify-content: center;
+align-items: center;
+height: 500px;
+background-color: skyblue;
+}
+
+.mainWrap{
+    height: 100%;
+    left: 50%;
+    max-width: 1920px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.mainWrap .mainBg{
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.mainInner{
+    position: relative;
+    z-index: 1;
+    padding: 0 40px;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.mainText{
+    display: block;
+    margin-top: 40px;
+    width: 612px;
+    
+}
+
+.control{
+    align-items: center;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 16px;
+    bottom: 400px;
+    display: -webkit-inline-box;
+    height: 32px;
+    left: 258px;
+    padding: 5px 14px;
+    position: absolute;
+    width: fit-content;
+    z-index: 1;
+}
+
+.slider{
+    margin-bottom: 45px;
+}
+
+.control .pageSlider{
+    color: white;
+    font-size: 12px;
+}
+
+.cardMain{
+    position: relative;
+    z-index: 1;
+    background: $bg-lg;
+}
+
+.cardList{
+    // padding-bottom: 60px;
+}
+
+.noticeCard{
+    bottom: calc(100% + 100px);
+    position: absolute;
+    right: calc(50% - 600px);
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.innerMain{
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 73, 52, .6);
+    border-radius: 10px;
+    height: 282px;
+    width: 282px;
+    color: white;
+}
+
+.innerWrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+}
+
+.title{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.comment{
+    font-size: 16px;
+}
+
+.noticeDetail{
+    align-self: flex-end;
+    border: 1px solid hsla(0, 0%, 100%, .5);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 37px;
+    margin-top: auto;
+    text-align: center;
+    width: 110px;
+}
+
+
+.groupCard{
+    transform: translateY(-75px);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cardWrap{
+    padding: 0 40px;
+    width: 1200px;
+}
+
+.topCard{
+    display: flex;
+    line-height: 1.4;
+    gap: 50px;
+}
+
+.topCard li{
+    flex: 1;
+    flex-direction: column;
+    height: 280px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#hana{
+    background: #fff url(../public/img/hanagroupcard.png) no-repeat;
+    background-position: right 30px bottom 30px;
+    background-size: 80px 80px;
+    box-shadow: -3px 4px 20px 0 rgba(177, 201, 201, .35);
+}
+
+#global{
+    background: #fff url(../public/img/global.png) no-repeat;
+    background-position: right 30px bottom 30px;
+    background-size: 80px 80px;
+    box-shadow: -3px 4px 20px 0 rgba(177, 201, 201, .35);
+}
+
+#chart{
+    background: $bg-lg url(../public/img/chart.png) no-repeat;
+    background-position: right 0px bottom 0px;
+    background-size: 240px 160px;
+    box-shadow: -3px 4px 20px 0 rgba(177, 201, 201, .35);
+}
+
+.innerHead{
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex: none;
+    height: 60px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.innerHead a{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.innerBody{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 26px 30px 36px;
+}
+
+.innerBody p.title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.text{
+    color: #666;
+    font-size: 14px;
+    margin-top: auto;
+}
