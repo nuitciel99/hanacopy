@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './reset.scss';
 import './style.scss';
+import NavBar from './component/Navbar.jsx';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='title'>가나다</h1>
-      <div className="container">dd</div>
+      <NavBar/>
     </div>
   );
 }

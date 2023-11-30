@@ -1,0 +1,86 @@
+@import './style.scss';
+
+#header {
+    padding: 0 40px;
+    height: 84px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: relative;
+    .gnb ul {display: flex;}
+}
+
+#header>#scrollProgressBar {
+    background-color: $black20;
+    bottom: 0;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#header>#scrollProgressBar>div {
+    background-color: $primary100;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.gnb {
+    ul li {margin: 0 30px;}
+    &>ul>li:hover {color: #247a49;}
+}
+
+#header .gnb>ul>li>div {
+    background: #F9F9F9; display: none;
+}
+
+.df {display: flex;}
+
+.right {
+    margin-top: 5px;
+    a {margin-right: 20px;}
+}
+
+.boxWrap {
+    width: 32px;
+    height: 38.39px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 2px;
+
+    
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background: $black80;
+    border-radius: 3px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.bar.start {
+transform: translateY(-9px);
+} 
+.bar.end {
+transform: translateY(9px);
+} 
+
+.boxWrap.active .bar.start {
+    transform: translateY(0) rotate(45deg);
+}
+.boxWrap.active .bar.end {
+    transform: translateY(0) rotate(-45deg);
+}
+.boxWrap.active .bar.middle {
+    /* 애니매이션 적용하기위해 d-none 대신 사용 */
+    opacity: 0;
+}
+
+.global h1 {padding-top: 1px;}
