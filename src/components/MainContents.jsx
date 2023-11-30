@@ -9,6 +9,8 @@ import { Navigation } from 'swiper/modules';
 import { TbPlayerPauseFilled } from "react-icons/tb";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
+import { HiDownload } from "react-icons/hi";
+import { FaMicrophone } from "react-icons/fa";
 
 function MainContents(){
     return(
@@ -57,7 +59,7 @@ function MainContents(){
                 <div className="cardList">
                     <section className='noticeCard'>
                         <div className='innerMain'>
-                            <div className='innerWrap'>
+                            <div className='innerWrapTop'>
                                 <p className='title'>하나금융그룹 소셜미디어 연간대행사 선정 입찰공고</p>
                                 <p className='comment'>2024년 하나금융그룹 소셜미디어 연간대행사 선정을 위해 다음과 같이 공고합니다.</p>
                                 <a className='noticeDetail' href="#">자세히 보기</a>
@@ -73,12 +75,12 @@ function MainContents(){
                                     </div>
                                     <div className="innerBody">
                                         <p className="title">
-                                            "함께 성장하며" <br/>
-                                            "행복을 나누는 금융"
+                                            함께 성장하며 <br/>
+                                            행복을 나누는 금융
                                         </p>
                                         <p className="text">
-                                            "직원, 손님, 사회 모두가 행복한" <br/>
-                                            "금융회사로 성장해갑니다"
+                                            직원, 손님, 사회 모두가 행복한 <br/>
+                                            금융회사로 성장해갑니다
                                         </p>
                                     </div>
                                 </li>
@@ -115,7 +117,52 @@ function MainContents(){
                             </ul>
                         </div>
                     </section>
-                    <section className='reportCard'></section>
+                    <section className='reportCard'>
+                        <div className="cardWrapReport">
+                            <div className="innerWrap">
+                                <div className="leftCards">
+                                    <div className="innerReportCard" id='esg'>
+                                        <div className="reportHead"><a href="#">ESG REPORT</a></div>
+                                        <div className="reportBody">
+                                            <p>2022년<br/>
+                                                지속가능경영보고서
+                                            </p>
+                                            <div>
+                                                <a className='reportPdf' href="#">PDF(국문)<HiDownload /></a>
+                                                <a className='reportPdf' href="#">PDF(영문)<HiDownload /></a>
+                                            </div>
+                                            <img src="./img/reportfirst.jpg" alt="" className='reportImg' />
+                                        </div>
+                                    </div>
+                                    <div className="innerReportCard" id='annual'>
+                                        <div className="reportHead"><a href="#">ANNUAL REPORT</a></div>
+                                        <div className="reportBody">
+                                            <p>2022년<br/>
+                                                연차 보고서
+                                            </p>
+                                            <div>
+                                                <a className='reportPdf' href="#">Annual Report(Full)<HiDownload /></a>
+                                                <a className='reportPdf' href="#">Annual Report(Only)<HiDownload /></a>
+                                            </div>
+                                            <img src="./img/reportsecond.jpg" alt="" className='reportImg' />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="innerReportCard" id='chartReport'>
+                                    <div className="reportHead"><a href="#">경영 실적</a></div>
+                                    <div className="reportBody">
+                                        <p>2023년<br/>
+                                            3분기 경영실적 발표
+                                        </p>
+                                        <div>
+                                            <a className='reportPdf' href="#">PDF<HiDownload /></a>
+                                            <a className='reportPdf' href="#">Web Casting<FaMicrophone /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </>
