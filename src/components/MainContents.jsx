@@ -18,7 +18,7 @@ function MainContents(){
             <div className="mainContent">
                 <Swiper
                     slidesPerView={1}
-                    navigation={true} modules={[Navigation]} className='mb-5'>
+                    navigation={false} modules={[Navigation]} className='mb-5'>
                     <SwiperSlide style={{background:"rgb(14, 140, 141)"}}>
                         <div className="mainWrap">
                             <img className='mainBg' src="./img/mainbg2.png" alt="" />

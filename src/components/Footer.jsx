@@ -30,7 +30,7 @@ function Footer(){
                             <a href="#"><FiFacebook /></a>
                         </div>
                         <a href="#" className='accessibility'>
-                            <SiKhanacademy />
+                        <img src="./img/accessibility.svg" alt="" className='accessImg'/>
                         </a>
                     </div>
                 </div>

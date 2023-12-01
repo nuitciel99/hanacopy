@@ -6,7 +6,14 @@ import React from 'react';
 function HanaGroup(){
     return(
         <>
-            
+            <div className="contents">
+                <div className="top">
+                    
+                </div>
+                <div className="bottom">
+
+                </div>
+            </div>
         </>
     )
 }
