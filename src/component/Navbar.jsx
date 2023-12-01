@@ -18,7 +18,7 @@ function NavBar() {
     })
 
     return (
-        <div id='header' className={`${scrollPosition < 100 ? 'top' : ''}`}>
+        <div id='header' className={`header ${scrollPosition < 100 ? 'top' : ''}`}>
             <a href="#"><img src={`${scrollPosition < 100 ? "././img/logo-w.svg" : "././img/logo.svg"}`} alt="" /></a>
             <div className="gnb">
                 <ul>
