@@ -110,7 +110,8 @@ function MainContents(){
                                              KRW
                                         </p>
                                         <p className="info">
-                                            <span className="upDown">-350원 (-0.84%)</span>
+                                            전일대비
+                                            <span className="upDown">200원 (0.48%)</span>
                                         </p>
                                     </div>
                                 </li>
