@@ -1,12 +1,21 @@
-import logo from './logo.svg';
 import './reset.scss';
 import './style.scss';
-import NavBar from './component/Navbar.jsx';
-import SubContent from './component/SubContent.jsx';
+
+import MainContents from './components/MainContents';
+import RecruitContent from './components/RecruitContent';
+import Footer from './components/Footer';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
+
+      <MainContents />
+      <RecruitContent />
+      <Footer />
       
     </div>
   );
