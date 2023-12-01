@@ -1,0 +1,80 @@
+@import './style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&display=swap');
+
+.inner {
+    max-width: 1280px;
+    padding: 0 40px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.news .title, .notice .title {margin-bottom: 30px;}
+
+.news_title, .announce_title {
+    display: flex; justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .icon {margin-left: 10px;}
+}
+
+.news_content{
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    .news_img  {
+        
+        img {border-radius: 10px; width: 100%; height: 100%;}
+    }
+    .badge {
+        border: 1px $primary100 solid; border-radius: 5px;
+        color: $primary100 ;
+        font-size: 12px; font-weight: 700;
+        height: 25px; width: 60px;
+        text-align: center; padding-top: 2px;
+        span {font-family: 'Noto Sans KR', sans-serif;}
+    }
+
+    p {
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        display: -webkit-box; overflow: hidden; 
+        font-size: 15px;
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-top: 20px;
+    }
+    p.date {font-size: 13px; color: $black40;}
+}
+
+.announce {
+    display: flex;
+    gap: 60px;
+    .announce_company, .announce_manegement {width: 50%;}
+    
+    .announce_content .list {
+        width: 100%;
+        display: flex; justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: 'Noto Sans KR', sans-serif;
+        color: $black80;
+    }
+    p.date {font-size: 13px; color: $black40;}
+}
+
+.manegement_list { 
+    display: flex; gap: 20px; 
+    p {color: $black80;}
+}
+.line {
+    .listTitle {
+        margin-bottom: 20px;
+    }
+    border-left: 1px solid $black20;
+    padding-left: 20px;
+}
+.downlink {
+    display: flex;
+    font-size: 14px;
+    .dwicon {margin: 5px 0 0 10px;}
+}
