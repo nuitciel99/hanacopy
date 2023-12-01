@@ -1,13 +1,25 @@
+import { useEffect, useState } from 'react';
 import '../navstyle.scss';
 import { AiOutlinePlus } from "react-icons/ai";
 import { PiGlobeSimpleLight } from "react-icons/pi";
 
 function NavBar() {
-    
+    const [isActive, setIsActive] = useState(false)
+    function openMenu() {
+        setIsActive(!isActive)
+    }
+    const [scrollPosition, setScrollosition] = useState(0);
+    const updateScroll = () => {
+        setScrollosition(window.scrollY || document.documentElement.scrollTop);
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll', updateScroll);
+    })
 
     return (
-        <div id="header">
-            <a href="#"><img src="././img/logo.svg" alt="" /></a>
+        <div id='header' className={`${scrollPosition < 100 ? 'top' : ''}`}>
+            <a href="#"><img src={`${scrollPosition < 100 ? "././img/logo-w.svg" : "././img/logo.svg"}`} alt="" /></a>
             <div className="gnb">
                 <ul>
                     <li><a href=""><h3 className='title'>그룹소개</h3></a>
@@ -62,13 +74,15 @@ function NavBar() {
             </div>
             <div className="right df">
                 <a href=""><h1><AiOutlinePlus /></h1></a>
-                <a href=""><h1><img src="././img/btn-network.svg" alt="" /></h1></a>
+                <a href=""><h1><img src={`${scrollPosition < 100 ? "././img/btn-network-w.svg" : "././img/btn-network.svg"}`} alt="" /></h1></a>
                 <a href="" className='global'><h1><PiGlobeSimpleLight /></h1></a>
-                <div className='boxWrap'>
-                    <div class="bar start"></div>
-                    <div class="bar middle"></div>
-                    <div class="bar end"></div>
-                </div>
+                <a href="">
+                    <div className={`boxWrap ${ isActive ? 'active' : '' }`} onClick={openMenu}>
+                        <div class="bar start"></div>
+                        <div class="bar middle"></div>
+                        <div class="bar end"></div>
+                    </div>
+                </a>
             </div>
             <div id='scrollProgressBar'>
                 <div></div>

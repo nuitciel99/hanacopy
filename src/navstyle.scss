@@ -2,10 +2,20 @@
 
 #header {
     padding: 0 40px;
+    width: 100%;
     height: 84px;
     display: flex; align-items: center; justify-content: space-between;
-    position: relative;
-    .gnb ul {display: flex;}
+    position: fixed;
+    .gnb>ul {display: flex;}
+}
+
+.top {
+    background-color: transparent;
+    >.gnb>ul>li>a, .right {
+        color: #F9F9F9;
+    }
+
+    .bar {background: #F9F9F9;}
 }
 
 #header>#scrollProgressBar {
@@ -27,21 +37,65 @@
     width: 0;
 }
 
-.gnb {
-    ul li {margin: 0 30px;}
-    &>ul>li:hover {color: #247a49;}
+.gnb>ul>li>div {
+    display: none;
+    position: absolute; top: 84px;
+    background: #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1280px;
+    z-index: -2;
 }
 
-#header .gnb>ul>li>div {
-    background: #F9F9F9; display: none;
+.gnb {
+    >ul>li {margin: 0 30px;}
+    >ul>li:hover {
+        >a {color: #247a49;}
+        .depth2 {display: block;}
+    }
+}
+
+#header .gnb>ul>li>div>ul {
+    max-width: 1280px; padding: 0 40px;
+    margin: 0 30px;
+}
+
+#header .gnb>ul>li>div>ul>li {
+    padding: 30px 30px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#header .gnb>ul>li>div>ul>li>ul {
+    color: $black40;
+    margin-top: 14px;
+    font-size: 15px;
+}
+
+#header .gnb>ul>li>div>ul>li>ul>li {
+    margin-top: 12px;
+    font-size: 14px;
 }
 
 .df {display: flex;}
 
 .right {
     margin-top: 5px;
-    a {margin-right: 20px;}
+    gap: 18px;
+    a { height: 40px; width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2px;
+    }
+    a:hover {
+        background: $black20;
+        border-radius: 50%;
+    }
 }
+
+
 
 .boxWrap {
     width: 32px;
@@ -50,10 +104,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     padding-bottom: 2px;
-
-    
 }
 
 .bar {
@@ -62,7 +113,6 @@
     background: $black80;
     border-radius: 3px;
     position: absolute;
-    transition: 0.3s;
 }
 
 .bar.start {
