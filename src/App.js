@@ -16,8 +16,8 @@ function App() {
     <div className="App">
       <Navbar />
       <MainContents />
-      <RecruitContent />
       <SubContent />
+      <RecruitContent />
       <Footer />
       
     </div>
