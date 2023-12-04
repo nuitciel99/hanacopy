@@ -18,7 +18,7 @@ function NavBar() {
     })
 
     return (
-        <div id='header' className={`${scrollPosition < 100 ? 'top' : ''}`}>
+        <div id='header' className={`header ${scrollPosition < 100 ? 'top' : ''}`}>
             <a href="#"><img src={`${scrollPosition < 100 ? "././img/logo-w.svg" : "././img/logo.svg"}`} alt="" /></a>
             <div className="gnb">
                 <ul>
@@ -76,7 +76,7 @@ function NavBar() {
                 <a href=""><h1><AiOutlinePlus /></h1></a>
                 <a href=""><h1><img src={`${scrollPosition < 100 ? "././img/btn-network-w.svg" : "././img/btn-network.svg"}`} alt="" /></h1></a>
                 <a href="" className='global'><h1><PiGlobeSimpleLight /></h1></a>
-                <a href="">
+                <a href="#!">
                     <div className={`boxWrap ${ isActive ? 'active' : '' }`} onClick={openMenu}>
                         <div class="bar start"></div>
                         <div class="bar middle"></div>
