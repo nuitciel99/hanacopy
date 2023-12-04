@@ -3,6 +3,7 @@
 #header {
     padding: 0 40px;
     width: 100%;
+    min-width: 1280px;
     height: 84px;
     display: flex; align-items: center; justify-content: space-between;
     position: fixed;
@@ -63,6 +64,8 @@
 #header .gnb>ul>li>div>ul {
     max-width: 1280px; padding: 0 40px;
     margin: 0 30px;
+    border-left: 1px solid $black20;
+    border-right: 1px solid $black20;
 }
 
 #header .gnb>ul>li>div>ul>li {
@@ -70,6 +73,8 @@
     width: 25%;
     display: inline-block;
     vertical-align: top;
+    // border-left: 1px solid $black20;
+    // border-right: 1px solid $black20;
 }
 
 #header .gnb>ul>li>div>ul>li>ul {
