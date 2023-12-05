@@ -66,10 +66,123 @@ function NavBar() {
                             </ul>
                         </div>
                     </li>
-                    <li><a href=""><h3 className='title'>기업지배구조</h3></a></li>
-                    <li><a href=""><h3 className='title'>ESG경영</h3></a></li>
-                    <li><a href=""><h3 className='title'>투자정보</h3></a></li>
-                    <li><a href=""><h3 className='title'>PR센터</h3></a></li>
+                    <li><a href=""><h3 className='title'>기업지배구조</h3></a>
+                        <div className="depth2">
+                            <ul className='sub'>
+                                <li><a href="">조직도</a></li>
+                                <li><a href="">주주총회</a>
+                                    <ul>
+                                        <li><a href="">주주구성</a></li>
+                                        <li><a href="">주주총회 결과</a></li>
+                                        <li><a href="">주주총회 관련 자료</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">이사회</a>
+                                    <ul>
+                                        <li><a href="">이사회구성</a></li>
+                                        <li><a href="">주요 활동 내역</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">지배구조 관련 내규</a>
+                                    <ul>
+                                        <li><a href="">정관</a></li>
+                                        <li><a href="">지배구조 내부 규범</a></li>
+                                        <li><a href="">이사회 규정</a></li>
+                                        <li><a href="">사외이사 독립성 기준</a></li>
+                                        <li><a href="">이사회 다양성 기준</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">경영진</a></li>
+                                <li><a href="">지배구조 공시</a></li>
+                                <li><a href="">기타</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><h3 className='title'>ESG경영</h3></a>
+                        <div className="depth2">
+                            <ul className='sub'>
+                                <li><a href="">ESG 전략</a></li>
+                                <li><a href="">ESG 성과</a></li>
+                                <li><a href="">ESG Reporting</a></li>
+                                <li><a href="">ESG 자료실</a></li>
+                                <li><a href="">사회가치창출활동</a>
+                                    <ul>
+                                        <li><a href="">하나 파워 온</a></li>
+                                        <li><a href="">보육사업</a></li>
+                                        <li><a href="">지역사회기여</a></li>
+                                        <li><a href="">ESG 소식</a></li>
+                                        <li><a href="">재단</a></li>
+                                        <li><a href="">봉사단</a></li>
+                                        <li><a href="">금융교육</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">스포츠</a>
+                                    <ul>
+                                        <li><a href="">스포츠단</a></li>
+                                        <li><a href="">대회/스폰서십</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><h3 className='title'>투자정보</h3></a>
+                        <div className="depth2">
+                            <ul className='sub'>
+                                <li><a href="">Investor Relations</a></li>
+                                <li><a href="">공시정보</a>
+                                    <ul>
+                                        <li><a href="">기업공시</a></li>
+                                        <li><a href="">경영공시</a></li>
+                                        <li><a href="">재무보고서</a></li>
+                                        <li><a href="">재무제표 공고</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">재무정보</a>
+                                    <ul>
+                                        <li><a href="">재무하이라이트</a></li>
+                                        <li><a href="">요약재무제표</a></li>
+                                        <li><a href="">재무제표</a></li>
+                                        <li><a href="">Databook</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">IR 정보</a>
+                                    <ul>
+                                        <li><a href="">IR행사&프레젠테이션</a></li>
+                                        <li><a href="">팩트시트</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">주가정보</a>
+                                    <ul>
+                                        <li><a href="">주가그래프</a></li>
+                                        <li><a href="">과거 주가검색</a></li>
+                                        <li><a href="">배당현황</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Annual Report</a></li>
+                                <li><a href="">신용평가등급</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href=""><h3 className='title'>PR센터</h3></a>
+                        <div className="depth2">
+                            <ul className='sub'>
+                                <li><a href="">PR센터</a></li>
+                                <li><a href="">하나소식</a>
+                                    <ul>
+                                        <li><a href="">하나뉴스</a></li>
+                                        <li><a href="">하나영상</a></li>
+                                        <li><a href="">하나공시</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">광고</a>
+                                    <ul>
+                                        <li><a href="">TVCF</a></li>
+                                        <li><a href="">인쇄광고</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div className="right df">
